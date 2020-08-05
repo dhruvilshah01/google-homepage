@@ -4,17 +4,25 @@
 <meta charset="UTF-8">
 <body>  
 
-
-<h1> Google </h1> 
-<input id = 'searchbar' type = "text">
-<div class = buttons> 
-
-
-<button type = "search">Google Search</button>  
-<button id="feeling" type = "button"> Feeling Lucky </button>
+<div class = "topright">
+<a href = '#'>Gmail</a> 
+<a id = 'images' href = '#'>Images</a>
+<button id = 'sign' type = 'button'>Sign In</button>
 </div> 
+<img src = 'google.png'>
+
+<input id = 'searchbar' type = "text">
+<div class = "buttons"> 
+
+
+<button id = "search">Google Search</button>  
+<button id="feeling" type = "button"> Feeling Lucky </button>
+</div>  
+
+
+
 </body>
-</html> 
+</html>  
 
 <style>
 .buttons {  
@@ -22,27 +30,37 @@ height: 50vh;
 display:flex; 
 justify-content:center;
 align-items:center;  
-padding-top: 150px; 
+margin-top: 175px; 
 border-radius:25px;
 
+}  
+.topright{   
+left: 70%;
+display:flex; 
+justify-content:flex-end; 
+
+
 } 
+
 #feeling { 
-margin-left:10vh; 
+margin-left:2vh; 
 height:30px;  
 width:120px; 
-border-radius:px;
+border-radius:2px; 
+background-color: rgb(235, 232, 232);
 
 }  
 #search { 
-height:40px;  
+border-radius:2px;
+height:30px;  
 width:120px; 
+background-color: rgb(235, 232, 232);  
 }
-h1{   
+img{   
 position:absolute; 
-left:46%; 
-top:25%;
-margin-bottom: 2vh; 
-
+left:43%; 
+top:22%;
+margin-bottom: 20vh;  
 
 } 
 #searchbar { 
@@ -50,8 +68,27 @@ position:absolute;
 left:36%; 
 top:37%; 
 width:65vh; 
-height: 3vh;
-margin-bottom: 2vh; 
-border-radius: 10px;
+height: 4vh;
+margin-bottom: 2vh;
+}  
+#images{ 
+margin-right: 2vh;
+}  
+#sign{ 
+background-color:#4386F7; 
+color:white; 
+height:30px; 
+width:80px; 
+border-radius:8px; 
+font-size:16px; 
+font-weight: 500;
 }
+a{ 
+margin-left: 2vh; 
+font-size: 12px; 
+color: black; 
+margin-top:1vh;
+} 
+
+
 </style>
